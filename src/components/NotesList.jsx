@@ -6,9 +6,14 @@ export default class NotesList extends Component {
     return (
       <div>
         <ul>
-          <li>
-            <CardList />
-          </li>
+          {Array.of("Trabalho", "Trabalho", "Estudos").map((categoria) => {
+            return (
+              <li>
+                <div>{categoria}</div>
+                <CardList />
+              </li>
+            );
+          })}
         </ul>
       </div>
     );
