@@ -1,14 +1,17 @@
 import React, { Component } from "react";
-import NotesList from "./components/NotesList.jsx";
-import Form from "./components/Form.jsx";
-
-export default class App extends Component {
+import ListaDeNotas from "./components/ListaDeNotas";
+import FormularioCadastro from "./components/FormularioCadastro";
+import "./assets/App.css";
+import './assets/index.css';
+class App extends Component {
   render() {
     return (
-      <div>
-        <Form />
-        <NotesList />
-      </div>
+      <section className="conteudo">
+        <FormularioCadastro />
+        <ListaDeNotas />
+      </section>
     );
   }
 }
+
+export default App;
