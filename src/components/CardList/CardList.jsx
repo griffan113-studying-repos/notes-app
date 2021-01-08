@@ -1,14 +1,15 @@
 import React, { Component } from "react";
+import "./CardList.css";
 
 class CardList extends Component {
   render() {
     return (
       <div>
-        <section>
+        <section className="card-list">
           <header>
             <h3>Título</h3>
-            <p>Escreva sua nota.</p>
           </header>
+          <p>Escreva sua nota.</p>
         </section>
       </div>
     );

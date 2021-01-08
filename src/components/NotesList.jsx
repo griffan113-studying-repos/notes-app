@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import CardList from "./CardList";
+import CardList from "./CardList/CardList";
 
 export default class NotesList extends Component {
   render() {
     return (
       <div>
         <ul>
-          {Array.of("Trabalho", "Trabalho", "Estudos").map((categoria) => {
+          {Array.of("Trabalho", "Trabalho", "Estudos").map((categoria, index) => {
             return (
-              <li>
+              <li key={index}>
                 <div>{categoria}</div>
                 <CardList />
               </li>
